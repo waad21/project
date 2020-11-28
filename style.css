@@ -4,6 +4,10 @@
 	padding:0;
 	font-family: sans-serif;
 }
+.dark-mode {
+  background-color: black;
+  color: white;
+}
 .hero{
 	height: 100vh;
 	background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8)),url(https://i.ibb.co/YhCf1HH/56-CA6313-E715-4780-ACF0-183-D96-B78064.jpg);
