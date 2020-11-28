@@ -8,6 +8,7 @@
         <link rel="stylesheet" type="text/css" href="style1.css">
        </head>
 	   <body>
+		  <button onclick="myFunction()">dark</button> 
 	    <div class="hero">
 		<div class="nav-bar">
 		<div class="nav-logo">
@@ -56,10 +57,25 @@
 		 </div>
 		  <div class="textbox">
 		  <i class="fa fa-lock" aria-hidden="true"></i>
-		 <input dir="rtl" align="right" type="password" placeholder="كلمة المرور" name="" value="">
+		 <input dir="rtl" align="right" type="password" placeholder="كلمة المرور" name="" value="" id="mypass" >
+			  <input type="checkbox" onclick="myFunction()">
 		 </div>
 		 <input class="btn" type="button"  name="" value="دخول">
 		 </div>
-		  
+		  <script>
+function myFunction() {
+   var x = document.body;
+   x.classList.toggle("dark-mode");
+}
+		function myFunction() {
+  var a = document.getElementById("mypass");
+  if (a.type === "password") {
+    a.type = "text";
+  } 
+  else {
+    a.type = "password";
+  }
+}	  
+</script>
 	   </body>
 	   </html>
